@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS, iOS Theme -->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.3.5/css/framework7.ios.min.css">
+    <!-- Path to Framework7 color related styles, iOS Theme -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.3.5/css/framework7.ios.colors.min.css">
+    
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="path/to/my-app.css">
+    <style type="text/css">
+    .page{
+      background-color: white;
+    }
+
+.navbar, .subnavbar, .toolbar {
+    background: #1313D4;
+    color: white;
+}    
+    </style>
+  </head>
+
+
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+            <div class="center sliding">Easy Auto</div>
+          </div>
+        </div>
+        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content -->
+            <div class="page-content">
+<center><img src="img/logo.png"></center>
+  <div class="content-block-title">Vehicle Listings</div>
+<div class="list-block media-list">
+  <ul>
+    <li>
+      <a href="page2.html" class="item-link item-content">
+        <div class="item-media"><img src="img/f150.jpg" width="80"></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">2002 F-150</div>
+            <div class="item-after">$3300</div>
+          </div>
+          <div class="item-subtitle">Mileage:190689</div>
+           <div class="item-subtitle">Transmission:Auto</div>
+           <div class="item-subtitle">8cyl</div>
+          <div class="item-text">If your looking for a work truck look no further this 2002 Ford f-150 wont let you down. It is equiped with a V8 great for pulling trailers and heavy duty work loads.</div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="corolla1.html" class="item-link item-content">
+        <div class="item-media"><img src="img/corolla.jpg" width="80"></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">2004 Toyota Corolla CE</div>
+            <div class="item-after">$5000</div>
+          </div>
+         <div class="item-subtitle">Mileage:65298</div>
+           <div class="item-subtitle">Transmission:Auto</div>
+           <div class="item-subtitle">4cyl</div>
+          <div class="item-text">FOR SALE!!! Mint condition 2004 Toyota Corolla. 4 cylinder great on gas. 1 owner clean Car Fax report get this car today for $1500 down $225 a month.</div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="honda1.html" class="item-link item-content">
+        <div class="item-media"><img src="img/blkcivic.jpg" width="80"></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">2004 Honda Civic LX</div>
+            <div class="item-after">$3499</div>
+          </div>
+          <div class="item-subtitle">Mileage:124356</div>
+           <div class="item-subtitle">Transmission:Auto</div>
+           <div class="item-subtitle">4cyl</div>
+          <div class="item-text">FOR SALE!!! Mint condition 2004 honda civic lx. 4 cylinder great on gas. This car wont last new paint, tires, and cold a/c. Great daily driver   </div>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="honda2.html" class="item-link item-content">
+        <div class="item-media"><img src="img/silvercivic.jpg" width="80"></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">2002 Honda Civic EX</div>
+            <div class="item-after">$3000</div>
+          </div>
+          <div class="item-subtitle">Mileage:200000</div>
+           <div class="item-subtitle">Transmission:Manual</div>
+           <div class="item-subtitle">4cyl</div>
+          <div class="item-text">FOR SALE!!! Mint condition 2004 honda civic ex. 4 cylinder great on gas. This car wont last new paint, tires, and cold a/c. Great daily driver   </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="corolla2.html" class="item-link item-content">
+        <div class="item-media"><img src="img/corolla2.jpg" width="80"></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">2002 Toyota Corolla CE</div>
+            <div class="item-after">$4200</div>
+          </div>
+         <div class="item-subtitle">Mileage:120000</div>
+           <div class="item-subtitle">Transmission:Auto</div>
+           <div class="item-subtitle">4cyl</div>
+          <div class="item-text">FOR SALE!!! Mint condition 2004 Toyota Corolla. 4 cylinder great on gas. 1 owner clean Car Fax report get this car today for $1500 down $200 a month.</div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="altima1.html" class="item-link item-content">
+        <div class="item-media"><img src="img/altima1.jpg" width="80"></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">2007 Nissan Altima S</div>
+            <div class="item-after">$6200</div>
+          </div>
+         <div class="item-subtitle">Mileage:148000</div>
+           <div class="item-subtitle">Transmission:Auto</div>
+           <div class="item-subtitle">4cyl</div>
+          <div class="item-text">FOR SALE!!! Mint condition 2007 Nissan Altima S. 4 cylinder great on gas Push to start keyless entry Bose sound system. 1 owner clean Car Fax report get this car today for $2000 down $280 a month.</div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="altima2.html" class="item-link item-content">
+        <div class="item-media"><img src="img/altima2.jpg" width="80"></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">2007 Nissan Altima S</div>
+            <div class="item-after">$6800</div>
+          </div>
+         <div class="item-subtitle">Mileage:85999</div>
+           <div class="item-subtitle">Transmission:Auto</div>
+           <div class="item-subtitle">4cyl</div>
+          <div class="item-text">FOR SALE!!! Mint condition 2007 Nissan Altima S. EXTRAAA LOWWW MILEEESSS 85999, 4 cylinder great on gas Push to start keyless entry Bose sound system4. Clean Car Fax report get this car today for $3400 down $290 a month.</div>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="BMW5281.html" class="item-link item-content">
+        <div class="item-media"><img src="img/BMW5281.jpg" width="80"></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">2010 BMW 528i</div>
+            <div class="item-after">$19000</div>
+          </div>
+         <div class="item-subtitle">Mileage:72000</div>
+           <div class="item-subtitle">Transmission:Auto</div>
+           <div class="item-subtitle">4cyl</div>
+          <div class="item-text">FOR SALE!!! Mint condition 2010 BMW 528i. EXTRAAA LOWWW MILEEESSS 72000, 6 cylinder Push to start keyless entry Tan leather interior. Clean Car Fax report get this car today for $3400 down $460 a month. Drive away in pure luxury in this great BMW. We approve everyone Good Credit Bad Credit Bankruptcy. Come on in and leave in a new car today.</div>
+        </div>
+      </a>
+    </li>
+
+     <li>
+      <a href="BMW328.html" class="item-link item-content">
+        <div class="item-media"><img src="img/BMW328.jpg" width="80"></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">2010 BMW 328i</div>
+            <div class="item-after">$15550</div>
+          </div>
+         <div class="item-subtitle">Mileage:10128</div>
+           <div class="item-subtitle">Transmission:Auto</div>
+           <div class="item-subtitle">4cyl</div>
+          <div class="item-text">FOR SALE!!! Mint condition 2010 BMW 328i. 4 cylinder Push to start keyless entry Tan leather interior. Clean Car Fax report get this car today for $3400 down $390 a month. Drive away in pure luxury in this great BMW. We approve everyone Good Credit Bad Credit Bankruptcy. Come on in and leave in a new car today.</div>
+        </div>
+      </a>
+    </li>
+    ...
+  </ul>
+</div>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <!-- Toolbar links -->
+            <a href="#" class="link">Link 1</a>
+            <a href="#" class="link">Link 2</a>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+
+
+<script type="text/javascript">'https://cdnjs.cloudflare.com/ajax/libs/framework7/1.3.5/js/framework7.min.js'</script>
+</body>
+</html>
