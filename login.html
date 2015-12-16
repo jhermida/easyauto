@@ -38,7 +38,7 @@
         <div class="navbar">
           <div class="navbar-inner">
             <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-            <div class="center sliding">Easy Auto</div>
+           
           </div>
         </div>
         <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
@@ -46,32 +46,58 @@
           <!-- Page, "data-page" contains page name -->
           <div data-page="index" class="page">
             <!-- Scrollable page content -->
-            <div class="page-content">
-<center><img src="img/logo.png"></center>
+            <!-- Should be a direct child of BODY -->
+  <div class="login-screen">
+      <!-- Default view-page layout -->
+      <div class="view">
+        <div class="page">
+          <!-- page-content has additional login-screen content -->
+          <div class="page-content login-screen-content">
+            <div class="login-screen-title">My App</div>
+            <!-- Login form -->
+            <form>
+              <div class="list-block">
+                <ul>
+                  <li class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Username</div>
+                      <div class="item-input">
+                        <input type="text" name="username" placeholder="Username">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Password</div>
+                      <div class="item-input">
+                        <input type="password" name="password" placeholder="Password">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <a href="#" class="item-link list-button">Sign In</a>
+                  </li>
+                </ul>
+                <div class="list-block-labe">Some text with login information.</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
   
-
-<a href="#" class="button button-big button-round active">Big Round Active Button </a>
-<br>
-<a href="#" class="button button-big button-round active">Big Round Active Button </a>
-<br>
-<a href="#" class="button button-big button-round active">Big Round Active Button </a>
-<br>
-<a href="#" class="button button-big button-round active">Big Round Active Button </a>
-
-
-
-
-
-
-            </div>
-          
-       
+          </div>
+        </div>
         <!-- Bottom Toolbar-->
         <div class="toolbar">
           <div class="toolbar-inner">
             <!-- Toolbar links -->
-            <a href="#" class="link">Link 1</a>
-            <a href="#" class="link">Link 2</a>
+            <a href="f150.html" class="link">Prev</a>
+            <a href="honda1.html" class="link">Next</a>
           </div>
         </div>
       </div>
